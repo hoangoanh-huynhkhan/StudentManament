@@ -33,24 +33,24 @@ namespace GUI
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lbl__title = new System.Windows.Forms.Label();
+            this.txt__username = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt__password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn__login = new Guna.UI2.WinForms.Guna2Button();
+            this.btn__show = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pic__password = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pic__username = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pic__title = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn__maximize = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn__minimize = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn__close = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.pic__title = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.pic__username = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.txt__username = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt__password = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pic__password = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btn__show = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btn__login = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn__show)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic__password)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic__username)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic__title)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__maximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic__title)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic__username)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic__password)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn__show)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -81,67 +81,6 @@ namespace GUI
             this.lbl__title.Size = new System.Drawing.Size(107, 27);
             this.lbl__title.TabIndex = 4;
             this.lbl__title.Text = "Đăng nhập";
-            // 
-            // btn__maximize
-            // 
-            this.btn__maximize.Image = global::GUI.Properties.Resources.full_screen;
-            this.btn__maximize.ImageRotate = 0F;
-            this.btn__maximize.Location = new System.Drawing.Point(93, 11);
-            this.btn__maximize.Name = "btn__maximize";
-            this.btn__maximize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn__maximize.Size = new System.Drawing.Size(27, 27);
-            this.btn__maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn__maximize.TabIndex = 3;
-            this.btn__maximize.TabStop = false;
-            // 
-            // btn__minimize
-            // 
-            this.btn__minimize.Image = global::GUI.Properties.Resources.minus;
-            this.btn__minimize.ImageRotate = 0F;
-            this.btn__minimize.Location = new System.Drawing.Point(60, 11);
-            this.btn__minimize.Name = "btn__minimize";
-            this.btn__minimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn__minimize.Size = new System.Drawing.Size(27, 27);
-            this.btn__minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn__minimize.TabIndex = 2;
-            this.btn__minimize.TabStop = false;
-            // 
-            // btn__close
-            // 
-            this.btn__close.Image = global::GUI.Properties.Resources.close;
-            this.btn__close.ImageRotate = 0F;
-            this.btn__close.Location = new System.Drawing.Point(27, 11);
-            this.btn__close.Name = "btn__close";
-            this.btn__close.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn__close.Size = new System.Drawing.Size(27, 27);
-            this.btn__close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn__close.TabIndex = 1;
-            this.btn__close.TabStop = false;
-            this.btn__close.Click += new System.EventHandler(this.btn__close_Click);
-            // 
-            // pic__title
-            // 
-            this.pic__title.Image = global::GUI.Properties.Resources.login_;
-            this.pic__title.ImageRotate = 0F;
-            this.pic__title.Location = new System.Drawing.Point(115, 50);
-            this.pic__title.Name = "pic__title";
-            this.pic__title.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pic__title.Size = new System.Drawing.Size(271, 284);
-            this.pic__title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic__title.TabIndex = 1;
-            this.pic__title.TabStop = false;
-            // 
-            // pic__username
-            // 
-            this.pic__username.Image = global::GUI.Properties.Resources.profile;
-            this.pic__username.ImageRotate = 0F;
-            this.pic__username.Location = new System.Drawing.Point(14, 387);
-            this.pic__username.Name = "pic__username";
-            this.pic__username.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pic__username.Size = new System.Drawing.Size(64, 64);
-            this.pic__username.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic__username.TabIndex = 2;
-            this.pic__username.TabStop = false;
             // 
             // txt__username
             // 
@@ -194,33 +133,6 @@ namespace GUI
             this.txt__password.TabIndex = 5;
             this.txt__password.TextChanged += new System.EventHandler(this.txt__password_TextChanged);
             // 
-            // pic__password
-            // 
-            this.pic__password.Image = global::GUI.Properties.Resources.password;
-            this.pic__password.ImageRotate = 0F;
-            this.pic__password.Location = new System.Drawing.Point(14, 503);
-            this.pic__password.Name = "pic__password";
-            this.pic__password.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pic__password.Size = new System.Drawing.Size(64, 64);
-            this.pic__password.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic__password.TabIndex = 4;
-            this.pic__password.TabStop = false;
-            // 
-            // btn__show
-            // 
-            this.btn__show.BackColor = System.Drawing.Color.White;
-            this.btn__show.Image = global::GUI.Properties.Resources.hide__1_;
-            this.btn__show.ImageRotate = 0F;
-            this.btn__show.Location = new System.Drawing.Point(426, 526);
-            this.btn__show.Name = "btn__show";
-            this.btn__show.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn__show.Size = new System.Drawing.Size(27, 27);
-            this.btn__show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn__show.TabIndex = 6;
-            this.btn__show.TabStop = false;
-            this.btn__show.Visible = false;
-            this.btn__show.Click += new System.EventHandler(this.btn__show_Click);
-            // 
             // btn__login
             // 
             this.btn__login.Animated = true;
@@ -250,6 +162,95 @@ namespace GUI
             this.btn__login.TabIndex = 7;
             this.btn__login.Text = "Đăng nhập";
             this.btn__login.UseTransparentBackground = true;
+            this.btn__login.Click += new System.EventHandler(this.btn__login_Click);
+            // 
+            // btn__show
+            // 
+            this.btn__show.BackColor = System.Drawing.Color.White;
+            this.btn__show.Image = global::GUI.Properties.Resources.hide__1_;
+            this.btn__show.ImageRotate = 0F;
+            this.btn__show.Location = new System.Drawing.Point(426, 526);
+            this.btn__show.Name = "btn__show";
+            this.btn__show.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn__show.Size = new System.Drawing.Size(27, 27);
+            this.btn__show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn__show.TabIndex = 6;
+            this.btn__show.TabStop = false;
+            this.btn__show.Visible = false;
+            this.btn__show.Click += new System.EventHandler(this.btn__show_Click);
+            // 
+            // pic__password
+            // 
+            this.pic__password.Image = global::GUI.Properties.Resources.password;
+            this.pic__password.ImageRotate = 0F;
+            this.pic__password.Location = new System.Drawing.Point(14, 503);
+            this.pic__password.Name = "pic__password";
+            this.pic__password.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pic__password.Size = new System.Drawing.Size(64, 64);
+            this.pic__password.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic__password.TabIndex = 4;
+            this.pic__password.TabStop = false;
+            // 
+            // pic__username
+            // 
+            this.pic__username.Image = global::GUI.Properties.Resources.profile;
+            this.pic__username.ImageRotate = 0F;
+            this.pic__username.Location = new System.Drawing.Point(14, 387);
+            this.pic__username.Name = "pic__username";
+            this.pic__username.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pic__username.Size = new System.Drawing.Size(64, 64);
+            this.pic__username.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic__username.TabIndex = 2;
+            this.pic__username.TabStop = false;
+            // 
+            // pic__title
+            // 
+            this.pic__title.Image = global::GUI.Properties.Resources.login_;
+            this.pic__title.ImageRotate = 0F;
+            this.pic__title.Location = new System.Drawing.Point(115, 50);
+            this.pic__title.Name = "pic__title";
+            this.pic__title.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pic__title.Size = new System.Drawing.Size(271, 284);
+            this.pic__title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic__title.TabIndex = 1;
+            this.pic__title.TabStop = false;
+            // 
+            // btn__maximize
+            // 
+            this.btn__maximize.Image = global::GUI.Properties.Resources.full_screen;
+            this.btn__maximize.ImageRotate = 0F;
+            this.btn__maximize.Location = new System.Drawing.Point(93, 11);
+            this.btn__maximize.Name = "btn__maximize";
+            this.btn__maximize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn__maximize.Size = new System.Drawing.Size(27, 27);
+            this.btn__maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn__maximize.TabIndex = 3;
+            this.btn__maximize.TabStop = false;
+            // 
+            // btn__minimize
+            // 
+            this.btn__minimize.Image = global::GUI.Properties.Resources.minus;
+            this.btn__minimize.ImageRotate = 0F;
+            this.btn__minimize.Location = new System.Drawing.Point(60, 11);
+            this.btn__minimize.Name = "btn__minimize";
+            this.btn__minimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn__minimize.Size = new System.Drawing.Size(27, 27);
+            this.btn__minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn__minimize.TabIndex = 2;
+            this.btn__minimize.TabStop = false;
+            // 
+            // btn__close
+            // 
+            this.btn__close.Image = global::GUI.Properties.Resources.close;
+            this.btn__close.ImageRotate = 0F;
+            this.btn__close.Location = new System.Drawing.Point(27, 11);
+            this.btn__close.Name = "btn__close";
+            this.btn__close.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn__close.Size = new System.Drawing.Size(27, 27);
+            this.btn__close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn__close.TabIndex = 1;
+            this.btn__close.TabStop = false;
+            this.btn__close.Click += new System.EventHandler(this.btn__close_Click);
             // 
             // frmLogin
             // 
@@ -270,13 +271,13 @@ namespace GUI
             this.Text = "frmLogin";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn__show)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic__password)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic__username)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic__title)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__maximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic__title)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic__username)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic__password)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn__show)).EndInit();
             this.ResumeLayout(false);
 
         }

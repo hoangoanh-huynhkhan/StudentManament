@@ -68,10 +68,31 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm__admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm__admin.Designer.cs">
+      <DependentUpon>frm__admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm__alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm__alert.Designer.cs">
+      <DependentUpon>frm__alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm__client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm__client.Designer.cs">
+      <DependentUpon>frm__client.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm__alert.resx">
+      <DependentUpon>frm__alert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,6 +157,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\profile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_25px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
