@@ -117,6 +117,7 @@ namespace GUI
             this.btn__close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn__close.TabIndex = 1;
             this.btn__close.TabStop = false;
+            this.btn__close.Click += new System.EventHandler(this.btn__close_Click);
             // 
             // pic__title
             // 
@@ -185,12 +186,13 @@ namespace GUI
             this.txt__password.Location = new System.Drawing.Point(107, 499);
             this.txt__password.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txt__password.Name = "txt__password";
-            this.txt__password.PasswordChar = '\0';
+            this.txt__password.PasswordChar = '*';
             this.txt__password.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt__password.PlaceholderText = "Mật khẩu";
             this.txt__password.SelectedText = "";
             this.txt__password.Size = new System.Drawing.Size(362, 77);
             this.txt__password.TabIndex = 5;
+            this.txt__password.TextChanged += new System.EventHandler(this.txt__password_TextChanged);
             // 
             // pic__password
             // 
@@ -216,6 +218,8 @@ namespace GUI
             this.btn__show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn__show.TabIndex = 6;
             this.btn__show.TabStop = false;
+            this.btn__show.Visible = false;
+            this.btn__show.Click += new System.EventHandler(this.btn__show_Click);
             // 
             // btn__login
             // 
