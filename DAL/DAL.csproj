@@ -51,6 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\DBContext.cs" />
+    <Compile Include="Entities\Employer.cs" />
+    <Compile Include="Entities\Faculty.cs" />
+    <Compile Include="Entities\Major.cs" />
+    <Compile Include="Entities\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
