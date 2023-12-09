@@ -88,8 +88,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\uc__students.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\uc__students.Designer.cs">
+      <DependentUpon>uc__students.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm__admin.resx">
+      <DependentUpon>frm__admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm__alert.resx">
       <DependentUpon>frm__alert.cs</DependentUpon>
@@ -104,6 +113,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC\uc__students.resx">
+      <DependentUpon>uc__students.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -172,6 +184,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_cancel_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\majority.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
