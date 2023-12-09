@@ -31,30 +31,30 @@ namespace GUI
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl__datetime = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btn__studentManager = new System.Windows.Forms.ToolStripButton();
-            this.btn__facultyManager = new System.Windows.Forms.ToolStripButton();
-            this.btn__majorManager = new System.Windows.Forms.ToolStripButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn__maximize = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn__minimize = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn__close = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btn__studentManager = new System.Windows.Forms.ToolStripButton();
+            this.btn__facultyManager = new System.Windows.Forms.ToolStripButton();
+            this.btn__majorManager = new System.Windows.Forms.ToolStripButton();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.uc__students1 = new GUI.UC.uc__students();
             this.guna2Panel1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn__maximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__close)).BeginInit();
+            this.toolStrip1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.label3);
+            this.guna2Panel1.Controls.Add(this.lbl__datetime);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.btn__maximize);
@@ -66,47 +66,14 @@ namespace GUI
             this.guna2Panel1.Size = new System.Drawing.Size(1238, 60);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // guna2Elipse1
+            // lbl__datetime
             // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.White;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn__studentManager,
-            this.btn__facultyManager,
-            this.btn__majorManager});
-            this.toolStrip1.Location = new System.Drawing.Point(9, 50);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(266, 60);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2Panel2.BorderRadius = 15;
-            this.guna2Panel2.BorderThickness = 3;
-            this.guna2Panel2.Controls.Add(this.uc__students1);
-            this.guna2Panel2.Location = new System.Drawing.Point(9, 133);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1194, 671);
-            this.guna2Panel2.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(234, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 27);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Xin chào Admin:";
+            this.lbl__datetime.AutoSize = true;
+            this.lbl__datetime.Location = new System.Drawing.Point(970, 22);
+            this.lbl__datetime.Name = "lbl__datetime";
+            this.lbl__datetime.Size = new System.Drawing.Size(97, 27);
+            this.lbl__datetime.TabIndex = 9;
+            this.lbl__datetime.Text = "Datetime";
             // 
             // label2
             // 
@@ -117,44 +84,14 @@ namespace GUI
             this.label2.TabIndex = 8;
             this.label2.Text = "Huỳnh Văn Chí Khan";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(970, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 27);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Datetime";
-            // 
-            // btn__studentManager
-            // 
-            this.btn__studentManager.AutoSize = false;
-            this.btn__studentManager.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn__studentManager.Image = global::GUI.Properties.Resources.add_user;
-            this.btn__studentManager.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn__studentManager.Name = "btn__studentManager";
-            this.btn__studentManager.Size = new System.Drawing.Size(50, 50);
-            this.btn__studentManager.Text = "Quản lý sinh viên";
-            // 
-            // btn__facultyManager
-            // 
-            this.btn__facultyManager.AutoSize = false;
-            this.btn__facultyManager.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn__facultyManager.Image = global::GUI.Properties.Resources.graduation;
-            this.btn__facultyManager.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn__facultyManager.Name = "btn__facultyManager";
-            this.btn__facultyManager.Size = new System.Drawing.Size(50, 50);
-            this.btn__facultyManager.Text = "Quản lý khoa";
-            // 
-            // btn__majorManager
-            // 
-            this.btn__majorManager.AutoSize = false;
-            this.btn__majorManager.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn__majorManager.Image = global::GUI.Properties.Resources.majority;
-            this.btn__majorManager.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn__majorManager.Name = "btn__majorManager";
-            this.btn__majorManager.Size = new System.Drawing.Size(50, 50);
-            this.btn__majorManager.Text = "Quản lý chuyên ngành";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(234, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 27);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Xin chào Admin:";
             // 
             // btn__maximize
             // 
@@ -193,6 +130,69 @@ namespace GUI
             this.btn__close.TabStop = false;
             this.btn__close.Click += new System.EventHandler(this.btn__close_Click);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.BackColor = System.Drawing.Color.White;
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn__studentManager,
+            this.btn__facultyManager,
+            this.btn__majorManager});
+            this.toolStrip1.Location = new System.Drawing.Point(9, 50);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(266, 60);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btn__studentManager
+            // 
+            this.btn__studentManager.AutoSize = false;
+            this.btn__studentManager.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn__studentManager.Image = global::GUI.Properties.Resources.add_user;
+            this.btn__studentManager.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn__studentManager.Name = "btn__studentManager";
+            this.btn__studentManager.Size = new System.Drawing.Size(50, 50);
+            this.btn__studentManager.Text = "Quản lý sinh viên";
+            // 
+            // btn__facultyManager
+            // 
+            this.btn__facultyManager.AutoSize = false;
+            this.btn__facultyManager.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn__facultyManager.Image = global::GUI.Properties.Resources.graduation;
+            this.btn__facultyManager.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn__facultyManager.Name = "btn__facultyManager";
+            this.btn__facultyManager.Size = new System.Drawing.Size(50, 50);
+            this.btn__facultyManager.Text = "Quản lý khoa";
+            // 
+            // btn__majorManager
+            // 
+            this.btn__majorManager.AutoSize = false;
+            this.btn__majorManager.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn__majorManager.Image = global::GUI.Properties.Resources.majority;
+            this.btn__majorManager.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn__majorManager.Name = "btn__majorManager";
+            this.btn__majorManager.Size = new System.Drawing.Size(50, 50);
+            this.btn__majorManager.Text = "Quản lý chuyên ngành";
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2Panel2.BorderRadius = 15;
+            this.guna2Panel2.BorderThickness = 3;
+            this.guna2Panel2.Controls.Add(this.uc__students1);
+            this.guna2Panel2.Location = new System.Drawing.Point(9, 133);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(1194, 671);
+            this.guna2Panel2.TabIndex = 2;
+            // 
             // uc__students1
             // 
             this.uc__students1.Location = new System.Drawing.Point(15, 8);
@@ -215,12 +215,12 @@ namespace GUI
             this.Text = "frm__admin";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn__maximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn__close)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -236,7 +236,7 @@ namespace GUI
         private System.Windows.Forms.ToolStripButton btn__majorManager;
         private System.Windows.Forms.ToolStripButton btn__studentManager;
         private System.Windows.Forms.ToolStripButton btn__facultyManager;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl__datetime;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;

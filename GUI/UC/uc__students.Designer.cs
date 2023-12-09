@@ -29,9 +29,9 @@ namespace GUI.UC
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv__students = new Guna.UI2.WinForms.Guna2DataGridView();
             this.grb__info = new Guna.UI2.WinForms.Guna2GroupBox();
             this.lbl__id = new System.Windows.Forms.Label();
@@ -46,17 +46,19 @@ namespace GUI.UC
             this.pic__avatar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn__update = new Guna.UI2.WinForms.Guna2Button();
             this.btn__delete = new Guna.UI2.WinForms.Guna2Button();
-            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Faculty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentAgv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Major = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chk__isMajor = new Guna.UI2.WinForms.Guna2CheckBox();
             this.lbl__gender = new System.Windows.Forms.Label();
             this.rad__male = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rad__female = new Guna.UI2.WinForms.Guna2RadioButton();
             this.lbl__birthday = new System.Windows.Forms.Label();
             this.dtp__birthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentFaculty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentAgv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentMajor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv__students)).BeginInit();
             this.grb__info.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic__avatar)).BeginInit();
@@ -66,31 +68,33 @@ namespace GUI.UC
             // 
             this.dgv__students.AllowUserToAddRows = false;
             this.dgv__students.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv__students.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv__students.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgv__students.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv__students.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv__students.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv__students.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StudentID,
             this.StudentName,
-            this.Faculty,
+            this.StudentGender,
+            this.StudentBirthday,
+            this.StudentFaculty,
             this.StudentAgv,
-            this.Major});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv__students.DefaultCellStyle = dataGridViewCellStyle3;
+            this.StudentMajor});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv__students.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgv__students.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv__students.Location = new System.Drawing.Point(491, 48);
             this.dgv__students.Name = "dgv__students";
@@ -112,7 +116,7 @@ namespace GUI.UC
             this.dgv__students.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv__students.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv__students.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv__students.ThemeStyle.HeaderStyle.Height = 54;
+            this.dgv__students.ThemeStyle.HeaderStyle.Height = 80;
             this.dgv__students.ThemeStyle.ReadOnly = true;
             this.dgv__students.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv__students.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -346,41 +350,6 @@ namespace GUI.UC
             this.btn__delete.TabIndex = 3;
             this.btn__delete.Text = "Xóa";
             // 
-            // StudentID
-            // 
-            this.StudentID.HeaderText = "Mã sinh viên";
-            this.StudentID.MinimumWidth = 6;
-            this.StudentID.Name = "StudentID";
-            this.StudentID.ReadOnly = true;
-            // 
-            // StudentName
-            // 
-            this.StudentName.HeaderText = "Họ tên";
-            this.StudentName.MinimumWidth = 6;
-            this.StudentName.Name = "StudentName";
-            this.StudentName.ReadOnly = true;
-            // 
-            // Faculty
-            // 
-            this.Faculty.HeaderText = "Khoa";
-            this.Faculty.MinimumWidth = 6;
-            this.Faculty.Name = "Faculty";
-            this.Faculty.ReadOnly = true;
-            // 
-            // StudentAgv
-            // 
-            this.StudentAgv.HeaderText = "Điểm TB";
-            this.StudentAgv.MinimumWidth = 6;
-            this.StudentAgv.Name = "StudentAgv";
-            this.StudentAgv.ReadOnly = true;
-            // 
-            // Major
-            // 
-            this.Major.HeaderText = "Chuyên ngành";
-            this.Major.MinimumWidth = 6;
-            this.Major.Name = "Major";
-            this.Major.ReadOnly = true;
-            // 
             // chk__isMajor
             // 
             this.chk__isMajor.AutoSize = true;
@@ -483,6 +452,55 @@ namespace GUI.UC
             this.dtp__birthday.TabIndex = 14;
             this.dtp__birthday.Value = new System.DateTime(2023, 12, 10, 0, 58, 1, 980);
             // 
+            // StudentID
+            // 
+            this.StudentID.HeaderText = "Mã sinh viên";
+            this.StudentID.MinimumWidth = 6;
+            this.StudentID.Name = "StudentID";
+            this.StudentID.ReadOnly = true;
+            // 
+            // StudentName
+            // 
+            this.StudentName.HeaderText = "Họ tên";
+            this.StudentName.MinimumWidth = 6;
+            this.StudentName.Name = "StudentName";
+            this.StudentName.ReadOnly = true;
+            // 
+            // StudentGender
+            // 
+            this.StudentGender.HeaderText = "Giới tính";
+            this.StudentGender.MinimumWidth = 6;
+            this.StudentGender.Name = "StudentGender";
+            this.StudentGender.ReadOnly = true;
+            // 
+            // StudentBirthday
+            // 
+            this.StudentBirthday.HeaderText = "Ngày sinh";
+            this.StudentBirthday.MinimumWidth = 6;
+            this.StudentBirthday.Name = "StudentBirthday";
+            this.StudentBirthday.ReadOnly = true;
+            // 
+            // StudentFaculty
+            // 
+            this.StudentFaculty.HeaderText = "Khoa";
+            this.StudentFaculty.MinimumWidth = 6;
+            this.StudentFaculty.Name = "StudentFaculty";
+            this.StudentFaculty.ReadOnly = true;
+            // 
+            // StudentAgv
+            // 
+            this.StudentAgv.HeaderText = "Điểm TB";
+            this.StudentAgv.MinimumWidth = 6;
+            this.StudentAgv.Name = "StudentAgv";
+            this.StudentAgv.ReadOnly = true;
+            // 
+            // StudentMajor
+            // 
+            this.StudentMajor.HeaderText = "Chuyên ngành";
+            this.StudentMajor.MinimumWidth = 6;
+            this.StudentMajor.Name = "StudentMajor";
+            this.StudentMajor.ReadOnly = true;
+            // 
             // uc__students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -510,11 +528,6 @@ namespace GUI.UC
         private Guna.UI2.WinForms.Guna2TextBox txt__id;
         private System.Windows.Forms.Label lbl__name;
         private System.Windows.Forms.Label lbl__id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Faculty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentAgv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Major;
         private Guna.UI2.WinForms.Guna2PictureBox pic__avatar;
         private System.Windows.Forms.Label lbl__avatar;
         private Guna.UI2.WinForms.Guna2TextBox txt__score;
@@ -530,5 +543,12 @@ namespace GUI.UC
         private Guna.UI2.WinForms.Guna2RadioButton rad__female;
         private Guna.UI2.WinForms.Guna2RadioButton rad__male;
         private System.Windows.Forms.Label lbl__gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentGender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentBirthday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentFaculty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentAgv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentMajor;
     }
 }
